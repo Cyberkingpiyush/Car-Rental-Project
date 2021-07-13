@@ -1,0 +1,1211 @@
+<html>
+<head>
+	<title> Miles Cars </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color;
+			}
+			.bg{
+				background-image: url('navbarbg.jpg');
+		}
+
+			.bg1{
+
+				background-size: 100% 100%;
+			}
+
+			.button {
+ 					 border: none;
+  					color: white;
+ 					 padding: 15px 32px;
+  					 text-align: center;
+ 					 text-decoration: none;
+ 					 display: inline-block;
+ 					 font-size: 16px;
+ 					 margin: 4px 2px;
+ 					 cursor: pointer;
+					}
+
+					.button1 {background-color: #4CAF50;} /* Green */
+					.button2 {background-color: #008CBA;} /* Blue */
+
+					.center 
+					{
+  					display: block;
+  					margin-left: auto;
+  					margin-right: auto;
+  					width: 30%;
+  					padding-top: 20px;
+					}
+
+					.dropbtn
+					 {
+						background-color: grey;
+						color: white;
+						padding: 16px;
+						font-size: 16px;
+						border: none;
+						cursor: pointer;
+						width: 450%;
+						margin-top: 10px;
+						text-align: left;
+
+							}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+  }
+
+.footer-widget p {
+    margin-bottom: 27px;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+  color:white;
+    line-height: 28px;
+}
+
+   .animate-border {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 3px;
+  background: #007bff; }
+
+.animate-border:after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  -webkit-animation: animborder 2s linear infinite;
+  animation: animborder 2s linear infinite; }
+
+@-webkit-keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px); } }
+
+@keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px); } }
+
+.animate-border.border-white:after {
+  border-color: #fff; }
+
+.animate-border.border-yellow:after {
+  border-color: #F5B02E; }
+
+.animate-border.border-orange:after {
+  border-right-color: #007bff;
+  border-left-color: #007bff; }
+
+.animate-border.border-ash:after {
+  border-right-color: #EEF0EF;
+  border-left-color: #EEF0EF; }
+
+.animate-border.border-offwhite:after {
+  border-right-color: #F7F9F8;
+  border-left-color: #F7F9F8; }
+
+/* Animated heading border */
+@keyframes primary-short {
+  0% {
+    width: 15%; }
+  50% {
+    width: 90%; }
+  100% {
+    width: 10%; } }
+
+@keyframes primary-long {
+  0% {
+    width: 80%; }
+  50% {
+    width: 0%; }
+  100% {
+    width: 80%; } } 
+
+.dk-footer {
+  padding: 75px 0 0;
+  background-color: #151414;
+  position: relative;
+  z-index: 2; }
+  .dk-footer .contact-us {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 80px; }
+    .dk-footer .contact-us .contact-info {
+      margin-left: 50px; }
+    .dk-footer .contact-us.contact-us-last {
+      margin-left: -80px; }
+  .dk-footer .contact-icon i {
+    font-size: 24px;
+    top: -15px;
+    position: relative;
+    color:#007bff; }
+
+.dk-footer-box-info {
+  position: absolute;
+  top: -68px;
+  background: #202020;
+  padding: 40px;
+  z-index: 2; }
+  .dk-footer-box-info .footer-social-link h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px; }
+  .dk-footer-box-info .footer-social-link ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .dk-footer-box-info .footer-social-link li {
+    display: inline-block; }
+  .dk-footer-box-info .footer-social-link a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff; }
+    .dk-footer-box-info .footer-social-link a i.fa-facebook {
+      background-color: #3B5998; }
+    .dk-footer-box-info .footer-social-link a i.fa-twitter {
+      background-color: #55ACEE; }
+    .dk-footer-box-info .footer-social-link a i.fa-google-plus {
+      background-color: #DD4B39; }
+    .dk-footer-box-info .footer-social-link a i.fa-linkedin {
+      background-color: #0976B4; }
+    .dk-footer-box-info .footer-social-link a i.fa-instagram {
+      background-color: #B7242A; }
+
+.footer-awarad {
+  margin-top: 285px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .footer-awarad p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+    padding-top: 15px; }
+
+.footer-info-text {
+  margin: 26px 0 32px; }
+
+.footer-left-widget {
+  padding-left: 80px; }
+
+.footer-widget .section-heading {
+  margin-bottom: 35px; }
+
+.footer-widget h3 {
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 15px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content; }
+
+.footer-widget ul {
+  width: 50%;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer-widget li {
+  margin-bottom: 18px; }
+
+.footer-widget p {
+  margin-bottom: 27px; }
+
+.footer-widget a {
+  color: #878787;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .footer-widget a:hover {
+    color: #007bff; }
+
+.footer-widget:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.dk-footer-form {
+  position: relative; }
+  .dk-footer-form input[type=email] {
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E; }
+  .dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::-webkit-input-placeholder {
+    color: #878787;
+    font-size: 14px; }
+  .dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::placeholder {
+    color: #878787;
+    font-size: 14px; }
+  .dk-footer-form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 24px 12px 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff; }
+  .dk-footer-form button:hover {
+    cursor: pointer; }
+
+/* ==========================
+
+    Contact
+
+=============================*/
+.contact-us {
+  position: relative;
+  z-index: 2;
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact-icon {
+  position: absolute; }
+  .contact-icon i {
+    font-size: 36px;
+    top: -5px;
+    position: relative;
+    color: #007bff; }
+
+.contact-info {
+  margin-left: 75px;
+  color: #fff; }
+  .contact-info h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0; }
+
+.copyright {
+  padding: 28px 0;
+  margin-top: 20px;
+  background-color: #202020; }
+  .copyright span,
+  .copyright a {
+    color: #878787;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .copyright a:hover {
+    color:#007bff; }
+
+.copyright-menu ul {
+  text-align: right;
+  margin: 0; }
+
+.copyright-menu li {
+  display: inline-block;
+  padding-left: 20px; }
+
+.back-to-top {
+  position: relative;
+  z-index: 2; }
+  .back-to-top .btn-dark {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e2e2e;
+    border-color: #2e2e2e;
+    display: none;
+    z-index: 999;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .back-to-top .btn-dark:hover {
+      cursor: pointer;
+      background: #FA6742;
+      border-color: #FA6742; }
+
+
+	  .heading {
+    text-align: center;
+    color: #454343;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.white-heading{
+    color: #ffffff;
+}
+.heading:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(img/heading-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white-heading:after {
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading span {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+.white-heading span {
+    color: #ffffff;
+}
+/*-----Testimonial-------*/
+
+.testimonial:after {
+    position: absolute;
+    top: -0 !important;
+    left: 0;
+    content: " ";
+    background: url(img/testimonial.bg-top.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+
+.testimonial {
+    min-height: 375px;
+    position: relative;
+    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+        background-size: cover;
+}
+#testimonial4 .carousel-inner:hover{
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#testimonial4 .carousel-inner:active{
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#testimonial4 .carousel-inner .item{
+  overflow: hidden;
+}
+
+.testimonial4_indicators .carousel-indicators{
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 0;
+  height: 20px;
+  bottom: 15px;
+  padding: 0 5px;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+.testimonial4_indicators .carousel-indicators li{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  text-indent: 0;
+  margin: 2px 3px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators .active{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  margin: 2px 3px;
+  background-color: #9dd3af;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
+  height: 3px;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
+  background: #eeeeee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.testimonial4_control_button .carousel-control{
+  top: 175px;
+  opacity: 1;
+  width: 40px;
+  bottom: auto;
+  height: 40px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 38px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  background: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
+  transition: all 0.6s cubic-bezier(0.3,1,0,1);
+}
+.testimonial4_control_button .carousel-control.left{
+  left: 7%;
+  top: 50%;
+  right: auto;
+}
+.testimonial4_control_button .carousel-control.right{
+  right: 7%;
+  top: 50%;
+  left: auto;
+}
+.testimonial4_control_button .carousel-control.left:hover,
+.testimonial4_control_button .carousel-control.right:hover{
+  color: #000;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.testimonial4_header{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+}
+.testimonial4_header h4{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+.testimonial4_slide p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 40px 0 20px 0;
+}
+.testimonial4_slide h4 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.testimonial .carousel {
+	padding-bottom:50px;
+}
+.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
+    width: 35px;
+    height: 35px;
+}
+/* ------testimonial  close-------*/
+
+		</style>
+	<div class="row" style="margin: 0;padding: 0;">
+		<div class="col-lg-2 col-sm-12" style="height: 70px;background-color:#323a44;padding:0px;">
+			<a href="mywebsite.html"><img src="Capture.jpg" style="height: 70px;width: 100%;"></a>
+		</div>
+		<div class="col-lg-3 col-sm-12" style="height: 70px;background-color:; padding: 0px;">
+			<img src="navbarbg.jpg" style="height: 70px;width: 100%;">
+		</div>
+		<div class="col-lg-1 col-sm-12 bg" style="height: 70px;background-color:#333833;padding-top: 20px; ">
+			<a href="mywebsite.html">
+			<h style="color: white;font-size: 16px;">HOME</h>
+		</a>
+		</div>
+		<div class="col-lg-1 col-sm-12 bg" style="height: 70px;background-color:#333833;padding-top: 20px;">
+			<a href="Offer.html">
+			<h style="color: white;font-size: 16px;">OFFERS</h>
+		</a>
+		</div>
+		<div class="col-lg-1 col-sm-12 bg" style="height: 70px;background-color:#333833;padding-top: 20px;">
+			<a href="FAQ.html">
+			<h style="color: white;font-size: 16px;">FAQ</h>
+		</a>
+		</div>
+		
+		<div class="col-lg-1 col-sm-12 bg" style="height: 70px;background-color:#333833;padding-top: 20px;">
+				<span href="" data-toggle="modal" data-target="#myModal1" style="color: white;font-size: 16px;">LOGIN</span>
+				
+		</div>
+
+		<div class="col-lg-2 col-sm-12 bg" style="height: 70px;background-color:#333833;padding-top: 20px; ">
+			<a href="Subscription.html">
+			<h style="color: white;font-size: 16px;">SUBSCRIPTION</h>
+		</a>
+		</div>
+		
+		<div class="col-lg-1 col-sm-12 bg" style="height: 70px;background-color:#333833;padding-top: 20px; ">
+			<a href="newadmin.html">
+			<h style="color: white;font-size: 16px;">ADMIN</h>
+		</a>
+		</div>
+		
+		</div>
+
+		<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+         
+        <div class="modal-body" style="background-color: white;">
+         <div class="row">
+<div class="col-lg-2" style="background-color:;"></div>
+    <div class="col-lg-8 login-container" style="text-align:center;background-color:white;" > 
+  <form method="post"  enctype= "multipart/form-data">
+   <h1 >Login</h1>
+   
+   
+   <div class="form-group" style="width: 100%;">
+
+     <input type="Email" name="Email"placeholder="Email" class="form-control"></div>
+       <div class="form-group" style="width: 100%;">
+     <input type="Password" name="PASSWORD"placeholder="Password" class="form-control"></div>
+   	 
+   	 <div class="col-lg-12 col-sm-12" style="text-align: justify;background-color:">
+		  
+		  <span style="color: black;"><a href="" style="color: rgb(14, 186, 186);font-size:15px;">Send a new password to my email ID</a>
+		  
+		</div>
+     <input type="submit"name=""value="Login" class="btn btn-info" style="margin-top:10%;width:130px;">
+  </form>
+  </div> 
+  <div class="col-lg-2" style="background-color:;"></div>
+</div>
+        </div>
+        <div class="container-fluid" style="height: 50px;width: 100%;background-color:;opacity: 0.8;text-align: center;">
+        	<span>Don't have a account yet?</span>
+        	<a href="" data-toggle="modal" data-target="#myModal2" style="color: rgb(14, 186, 186);font-size:15px;">Sign Up</a>
+        </div>
+        <div class="container-fluid" style="height: 100px;width: 100%;background-color:;opacity: 0.8;text-align: center;">
+        	<a><img src="google-login.png" style="height: 30px; width: 30%;"></a>
+        	<img src="facebook-icon.png" style="height: 30px;width: 30%;">
+     </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+    
+
+    <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" >
+        <div class="modal-header" style="border-radius: 5px;background-color:white;">
+         
+          <h4 class="modal-title" style="color: white;"></h4>
+        </div>
+	        <div class="modal-body" style="background-color;border-radius: 5px;">
+         <div class="row">
+<div class="col-lg-2"></div>
+    <div class="col-lg-8 signup-container" style="text-align:center;" > 
+  <form method="post"  enctype= "multipart/form-data">
+   <h1 >Sign Up</h1>
+   
+   <div class="form-group" style="width: 100%;">
+    <input type="text" name="NAME"placeholder="NAME" class="form-control"> </div>
+   <div class="form-group" style="width: 100%;">
+
+     <input type="Email" name="Email"placeholder="Email" class="form-control"></div>
+       <div class="form-group" style="width: 100%;">
+     <input type="Password" name="PASSWORD"placeholder="Password" class="form-control"></div>
+   
+   <div class="form-group" style="width: 100%;">
+     <input type="Password" name="CONFIRM PASSWORD"placeholder="Confirm Password" class="form-control"></div>
+       <div class="form-group" style="width: 100%;">
+    <input type="text" name="MOBILE NO."placeholder="Mobile No." class="form-control"> </div>
+    <div class="form-group" style="width: 100%;">
+     <input type="text" name="GENDER"placeholder="Gender" class="form-control"></div>
+     
+     <div class="form-group" style="width: 100%;">
+      <input type="text" name="AGE"placeholder="Age" class="form-control"></div>
+      
+     <input type="submit"name=""value="SUBMIT" class="btn btn-primary" style="margin-top:5%; ">
+  </form>
+     
+  </div> 
+  
+</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="carousel-inner" role="listbox">
+
+	<div class="item active"> 
+		 <div class="col-lg-12" style="height: 500px; background-color;background-image: url('bg.jpg');background-size: 100% 100%;padding: 0;margin: 0;">
+		 
+			<div>
+				<h1 style="text-align: center;margin-top: 15rem;color: #fff;">DRIVE IN A SANITISED MILESCAR</h1>
+				<p style="text-align: center;color: #fff;font-size: 20px;margin-right: 80px;">Self Drive Car Rental in
+					<button type="button" class="btn btn-light" style="opacity: 70%;">Kanpur
+					</button>
+				</p>
+			</div>
+
+			<a class="btn btn-light" href="mywebsite.html" role="button" style="height: 50px;width: 33%;text-align: left;margin-left: 45rem;padding-top: 10px;font-size: 20px;">Your Wonderful Journey &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp > </a>
+
+		</div>
+		 
+   </div>
+		
+
+
+	<div class="row col-lg-12 col-sm-12" style="background-color:#f2f2f2;height:510px;margin:0px;padding:0px">
+	<div  class="col-lg-12 col-sm-12" style="background-color:#f2f2f2;height:80px;margin-left:0px;margin-right:0px">
+		<p style="color:black;text-align:center;font-size:25px;padding-top: 5px;">MILES ADVANTAGES</p>
+		<p style="color:black;text-align:center;font-family:bold;font-size:20px">We simplified car rentals, so you can focus on what's important to you.</p>
+	</div>
+	  <div class="col-lg-2 col-sm-2" style="height:400px;background-color:#f2f2f2"></div>
+	  <div class="col-lg-8 col-sm-8" style="height:400px;background-color:#f2f2f2">
+	  	<div class="row">
+	  		<div class="col-lg-4 col-sm-4" class="animation1" style="height:200px;margin:0px;padding:0px">
+	  			<div class="animation2" style="margin:3px;background-color:white;padding:4px;text-align:center;">
+	  				<img src="icon1.png" style="height:40%;width:32%;padding-left:12px">
+	  			<p style="text-align:center;padding-top:px;font-size:22px;color:#669900">Fuel Cost Included</p>
+	  			<p style="font-size:14px;color:black">Don't worry about mileage!If you refill fuel, we'll pay you back!</p>
+	  		    </div>
+	  		</div>
+	  		<div class="col-lg-4 col-sm-4" style="height:200px;margin:0px;padding:0px">
+	  			<div style="margin:3px;background-color:white;padding:4px;text-align:center;">
+	  			<img src="icon2.png" style="height:40%;width:32%;padding-left:12px">
+	  			<p style="text-align:center;padding-top:px;font-size:22px;color:#669900">No Hidden Charges</p>
+	  			<p style="font-size:14px;color:black">Our prices include taxes and insurance.
+                What you see is what you really pay!</p>
+            </div>
+	  		</div>
+	  		<div class="col-lg-4 col-sm-4" style="height:200px;margin:0px;padding:0px">
+	  			<div style="margin:3px;background-color:white;padding:4px;text-align:center;">
+	  			<img src="icon3.png" style="height:40%;width:32%;padding-left:10px;">
+	  			<p style="text-align:center;padding-top:;font-size:22px;color:#669900">Flexi Pricing Packages</p>
+	  			<p style="font-size:14px;color:black"> Choose a balance of time and kilometers that works best for you.</p>
+	  		</div>
+	  		</div>
+	  	</div>
+	  	<div class="row">
+	  	    <div class="col-lg-4 col-sm-4" style="height:200px;margin: 0px;padding: 0px">
+	  	    	<div style="margin:3px;background-color:white;padding:4px;text-align:center;">
+	  	    	<img src="icon4.png" style="height:40%;width:32%;padding-left:10px;">
+	  	    	<p style="text-align:center;padding-top:;font-size:22px;color:#669900">Go Anywhere</p>
+	  	    	<p style="font-size:14px;color:black">Our cars have all-India permits. Just remember to pay state tolls.</p>
+	  	    </div>
+	  	    </div>
+	  		<div class="col-lg-4 col-sm-4" style="height:200px;margin: 0px;padding: 0px;text-align:center;">
+	  			<div style="margin:3px;background-color:white;padding:4px">
+	  			<img src="icon5.png" style="height:40%;width:32%;padding-left:12px;">	
+	  			<p style="text-align:center;padding-top:;font-size:22px;color:#669900">24x7 Roadside Assistance</p>
+	  			<p style="font-size:14px;color:black">We have round-the-clock, pan India partners. Help is never far away from you.</p>
+	  		</div>
+	  		</div>
+	  		<div class="col-lg-4 col-sm-4" style="height:200px;margin: 0px;padding: 0px;text-align:center;">
+	  			<div style="margin:3px;background-color:white;padding:4px">
+	  			<img src="icon6.png" style="height:40%;width:28%;padding-left:10px;">	
+	  			<p style="text-align:center;padding-top:;font-size:22px;color:#669900">Damage Insurance</p>
+	  			<p style="font-size:14px;color:black">All your bookings include damage insurance! Drive safe, but don’t worry!</p>
+	  		</div>
+	  		</div>
+	  	</div>
+	  </div>
+	  <div class="col-lg-2 col-sm-6" style="height:400px;background-color:#f2f2f2"></div>
+</div>
+
+<div class="row">
+	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	  </ol>
+  
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+  
+		<div class="item active">
+		  <img src="ecosport.jpg" alt="Los Angeles" style="width:100%;height:500px;">
+		  <div class="carousel-caption">
+			<h3>FORD ECOSPORT</h3>
+			<p>LA is always so much fun!</p>
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <img src="swift.jpg" alt="Chicago" style="width:100%;height:500px;">
+		  <div class="carousel-caption">
+			<h3>MARUTI SWIFT</h3>
+			<p>Thank you, Chicago!</p>
+		  </div>
+		</div>
+	  
+		<div class="item">
+		  <img src="innova.jpg" alt="New York" style="width:100%;height:500px;">
+		  <div class="carousel-caption">
+			<h3>INNOVA CRYSTA</h3>
+			<p>We love the Big Apple!</p>
+		  </div>
+		</div>
+	
+	  </div>
+  
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
+  </div>
+
+
+
+
+	<div class="col-lg-12" style="background-color:#F2F2F2;height: 65px;text-align: center;padding-top: 30px;font-size: 25px;">
+						HOW MILES WORKS
+					</div>
+					<div class="col-lg-12" style="background-color:#F2F2F2;height: 60px;text-align: center;">
+						Drive yourself to an adventure and back in 5 simple steps
+					</div>
+					<div class="row" style="padding: 0px;">
+						<div class="col-lg-1" style="background-color:#F2F2F2;height: 300px;"></div>
+						<div class="col-lg-2" style="background-color:#F2F2F2;height: 300px;margin: 0px;padding:0px;">
+							<div class="col-lg-11" style="height: 80px;background-color: white;margin-top: 60px;text-align: center;">
+								<img src="1.svg" style="padding-top: 20px;">
+							</div>
+							<div class="col-lg-11" style="height: 80px;background-color: white;text-align: center;font-size: 13px;">
+								BOOK<br>Search for and book a car on our site!</br>
+							</div>
+						</div>
+
+						<div class="col-lg-2" style="background-color:#F2F2F2;height: 300px;margin: 0px;padding:0px;">
+							<div class="col-lg-11" style="height: 80px;background-color: white;margin-top: 60px;text-align: center;">
+								<img src="2.svg" style="padding-top: 20px;">
+							</div>
+							<div class="col-lg-11" style="height: 80px;background-color:white ;text-align: center;font-size:13px;">
+								UPLOAD LICENSE<br>Upload your license, and pay a small security.</br>
+							</div>
+						</div>
+						<div class="col-lg-2" style="background-color:#F2F2F2;height: 300px;margin: 0px;padding:0px;">
+							<div class="col-lg-11" style="height: 80px;background-color: white;margin-top: 60px;text-align: center;padding-top: 10px;">
+								<img src="3.png" style="height: 50px;">
+							</div>
+							<div class="col-lg-11" style="height: 80px;background-color:white ;text-align: center;font-size:13px;">
+								UNLOCK<br>We SMS your car details 20 minutes before pickup.Unlock it via the Miles app.</br>
+							</div>
+						</div>
+						<div class="col-lg-2" style="background-color:#F2F2F2;height: 300px;margin: 0px;padding: 0px;">
+							<div class="col-lg-11" style="height: 80px;background-color: white;margin-top: 60px;text-align: center;padding-top: 10px;">
+								<img src="4.svg" style="height: 50px;">
+							</div>
+							<div class="col-lg-11" style="height: 80px;background-color:white ;text-align: center;font-size:13px;">
+								MILES<br>Fill the start checklist in the Miles app. Grab the keys from the glove-box and drive.</br>
+							</div>
+						</div>
+						<div class="col-lg-2" style="background-color:#F2F2F2;height: 300px;margin: 0px;padding: 0px;">
+							<div class="col-lg-11" style="height: 80px;background-color: white;margin-top: 60px;text-align: center;padding-top: 10px;">
+								<img src="5.svg" style="height: 50px;">
+							</div>
+							<div class="col-lg-11" style="height: 80px;background-color:white ;text-align: center;font-size:13px;">
+								RETURN<br>Return the car to the same location and fill the end checklist to end your trip.</br>
+							</div>
+						</div>
+						<div class="col-lg-1" style="background-color:#F2F2F2;height: 300px;"></div>
+</div>
+
+<!-- ------review----- -->
+
+<section class="testimonial text-center">
+	<div class="container">
+
+		<div class="heading white-heading">
+			Testimonial
+		</div>
+		<div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+		 
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="testimonial4_slide">
+						<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+						<h4>Client 1</h4>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="testimonial4_slide">
+						<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+						<h4>Client 2</h4>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="testimonial4_slide">
+						<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+						<h4>Client 3</h4>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#testimonial4" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<footer id="dk-footer" class="dk-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-4">
+				<div class="dk-footer-box-info">
+					<a href="index.html" class="footer-logo">
+						<img src="/Capture.JPG" alt="footer_logo" class="img-fluid">
+					</a>
+					<p class="footer-info-text">
+					   Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+					</p>
+					<div class="footer-social-link">
+						<h3>Follow us</h3>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/?lang=en">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/home">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- End Social link -->
+				</div>
+				<!-- End Footer info -->
+				<div class="footer-awarad">
+					<img src="images/icon/best.png" alt="">
+					<p>Best Design Company 2019</p>
+				</div>
+			</div>
+			<!-- End Col -->
+			<div class="col-md-12 col-lg-8">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="contact-us">
+							<div class="contact-icon">
+								<i class="fa fa-map-o" aria-hidden="true"></i>
+							</div>
+							<!-- End contact Icon -->
+							<div class="contact-info">
+								<a href="https://www.google.com/maps/place/I%2F171,+Sector+I,+Barra+World+Bank,+Barra,+Kanpur,+Uttar+Pradesh+208027/@26.423232,80.2943203,17z/data=!3m1!4b1!4m5!3m4!1s0x399c47ca4c0afc11:0xed2598c51addeecd!8m2!3d26.423232!4d80.296509" style="font-size: 20px;">Kanpur INDIA</a>
+								<p>Etech Institute</p>
+							</div>
+							<!-- End Contact Info -->
+						</div>
+						<!-- End Contact Us -->
+					</div>
+					<!-- End Col -->
+					<div class="col-md-6">
+						<div class="contact-us contact-us-last">
+							<div class="contact-icon">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							</div>
+							<!-- End contact Icon -->
+							<div class="contact-info">
+                <a href="tel:5551234567" style="font-size: 18px;">Call 8299792534, 9519146709</a>
+								<p>Give us a call</p>
+							</div>
+							<!-- End Contact Info -->
+						</div>
+						<!-- End Contact Us -->
+					</div>
+					<!-- End Col -->
+				</div>
+				<!-- End Contact Row -->
+				<div class="row">
+					<div class="col-md-12 col-lg-6">
+						<div class="footer-widget footer-left-widget">
+							<div class="section-heading">
+								<h3>Useful Links</h3>
+								<span class="animate-border border-black"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="milesteam.html">About us</a>
+								</li>
+								<li>
+									<a href="subscription.html">Services</a>
+								</li>
+								
+								<li>
+									<a href="milesteam.html">Our Team</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="contactus.html">Contact us</a>
+								</li>
+								
+								
+								<li>
+									<a href="FAQ.html">Faq</a>
+								</li>
+							</ul>
+						</div>
+						<!-- End Footer Widget -->
+					</div>
+					<!-- End col -->
+					<div class="col-md-12 col-lg-6">
+						<div class="footer-widget">
+							<div class="section-heading">
+								<h3>Subscribe</h3>
+								<span class="animate-border border-black"></span>
+							</div>
+							<p>
+							Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+							<form action="#">
+								<div class="form-row">
+									<div class="col dk-footer-form">
+										<input type="email" class="form-control" placeholder="Email Address">
+										<button type="submit">
+											<i class="fa fa-send"></i>
+										</button>
+									</div>
+								</div>
+							</form>
+							<!-- End form -->
+						</div>
+						<!-- End footer widget -->
+					</div>
+					<!-- End Col -->
+				</div>
+				<!-- End Row -->
+			</div>
+			<!-- End Col -->
+		</div>
+		<!-- End Widget Row -->
+	</div>
+	<!-- End Contact Container -->
+
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<span>Copyright © 2021, All Right Reserved
+						<p>Made With ❤️  by Cyberking Piyush</p>
+					</span>
+				</div>
+				
+				<!-- End Col -->
+				<div class="col-md-6">
+					<div class="copyright-menu">
+						<ul>
+							<li>
+								<a href="mywebsite.html">Home</a>
+							</li>
+							<li>
+								<a href="#">Terms</a>
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="contactus.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End Row -->
+		</div>
+		<!-- End Copyright Container -->
+	</div>
+	<!-- End Copyright -->
+	<!-- Back to top -->
+	<div id="back-to-top" class="back-to-top">
+		<button class="btn btn-dark" title="Back to Top" style="display: block;">
+			<i class="fa fa-angle-up"></i>
+		</button>
+	</div>
+	<!-- End Back to top -->
+</footer>
+
+
+</body>
+					
+</html>
